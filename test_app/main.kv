@@ -1,11 +1,24 @@
-BoxLayout:
-    orientation: "vertical"
+MyMainWindow:
+    MyMainScreen:
+    MyReportScreen:
 
-    Label:
-        id: hello_label
-        text: "Hello World"
-        on_text: if len(self.text) > 30: self.text = "Stop clicking!"
 
-    Button:
-        text: "Click me!"
-        on_release: hello_label.text += "!"
+<MyMainScreen>:
+    name: 'main_screen'
+
+    MyMainPage:
+
+
+<MyReportScreen>:
+    name: 'report_screen'
+
+    MyReportPage:
+
+
+<MyEventDateScreen>:
+    name: 'event_screen'
+
+    MyEventDatePage:
+
+
+
